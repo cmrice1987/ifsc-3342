@@ -130,8 +130,8 @@ img{
 /* ------ Global Styles -------*/
 
 body{
-  background:#efefef;
-  color:#222222;
+  background:#568EBF;
+  color:#f2f2f2;
   line-height:1.6;
 } 
 
@@ -153,14 +153,14 @@ nav.primary{
 }
 
 nav a:link, nav a:visited{
-  border:1px solid #000;
+  border:1px solid none;
   padding:8px 16px;
   text-align:center;
   text-decoration:none;
   color:#222222;
   text-transform:uppercase;
   font-size:.75em;
-  background:rgba(0,0,0,.65);
+  background:none;
   transition: background-color .5s ease;
   color:#fff;
 }
@@ -237,9 +237,9 @@ dd{
   color:#222222;
   text-transform:uppercase;
   font-size:.75em;
-  background:rgba(0,0,0,.65);
+  background:none;
   transition: background-color 0.5s ease;
-  color:#fff;
+  color:#F2F2F2;
 }
 
 .related-links .svg-inline--fa{
