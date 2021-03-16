@@ -15,9 +15,11 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/app.js">
 
 
   <meta name="theme-color" content="#fafafa">
@@ -40,12 +42,14 @@
   </header>
   <!-- Main -->
   <main itemscope itemtype="http://schema.org/Person" class="container">
-    <h1>Candice Rice</h1>
+    <h1 class="page-title">Candice Rice</h1>
     <section id="about">
       <h2 class="visuallyhidden">Personal details</h2>
+      <div class="bio">
       <img itemprop="image" src="img/cr_pic.jpg" alt="Candice Rice">
       <p itemprop="description">Hello I am Candice Rice. I am currently in my senior year as a Web Design and Development major, at the University of Arkansas at Little Rock. I am a great team player, very hardworking, dependable, fast learner, with an awesome personality!</p>
-      <dl>
+      </div>
+      <dl class="details">
         <dt>Name</dt>
         <dd itemprop="name">
           <span itemprop="givenName">Candice</span> <span itemprop="familyName">Rice</span>
@@ -85,8 +89,8 @@
       <ul>
         <li class="skill"><i class="fab fa-html5"></i> HTML</li>
         <li class="skill"><i class="fab fa-php"></i> PHP</li>
-        <li class="skill"><i class="fab fa-java"></i> Java</li>
         <li class="skill"><i class="fab fa-sass"></i> Scss</li>
+        <li class="skill"><i class="fab fa-js"></i> Java</li>
       </ul>
     </section>
     <section id="experience">
@@ -149,7 +153,7 @@ public.</p>
   <!-- Footer -->
   <footer class="container">
     <div id="copyright">
-      &copy; company. All rights reserved.
+      &copy; Candice Rice. All rights reserved.
     </div>
   </footer>
   <script src="js/vendor/modernizr-3.11.4.min.js"></script>
