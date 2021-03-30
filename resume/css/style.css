@@ -104,13 +104,23 @@ body {
 /*------- Fluid Images ------*/
 img {
   max-width: 100%;
+  border-radius: 25px;
+  padding: 20px;
+  width:200px;
   height: auto;
+}
+.center{
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* ------ Design Time Styles -------*/
 .container {
   max-width: 900px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 /* ------ Helper Classes -------*/
@@ -158,7 +168,7 @@ nav.primary {
 
 nav a:link,
 nav a:visited {
-  border: 1px solid #000;
+  border: 1px solid none;
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
@@ -168,23 +178,29 @@ nav a:visited {
   background: #506AD4;
   transition: background-color 0.5s ease;
   color: #FFFCE6;
+  flex: 1 25%;
 }
 
 nav a:hover {
-  background: rgba(0, 0, 0, 0.95);
+  background:#F2CC39;
 }
 
 main {
   padding: 1px 20px;
 }
 
-main h1 {
+main h1, h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  list-style-type: none;
   text-align: center;
   font-weight: 400;
   font-variant: small-caps;
+}
+
+h2{
+  color:#F2CC39;
 }
 main h1:before,
 main h1:after {
@@ -217,15 +233,16 @@ dl {
 dt {
   font-weight: 800;
   padding: 10px 0;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid none;
   grid-column: 1;
 }
 
 dd {
   margin: 0;
   padding: 10px 0;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid none;
   grid-column: 2;
+  font-weight: 1000;
 }
 
 .related-links {
@@ -236,7 +253,7 @@ dd {
 }
 
 .related-links a {
-  border: 1px solid #000;
+  border: 1px solid none;
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
@@ -254,7 +271,7 @@ dd {
 }
 
 .related-links a:hover {
-  background: rgba(0, 0, 0, 0.95);
+  background: #F2CC39;
 }
 
 .related-links li {
@@ -276,6 +293,7 @@ dd {
 }
 
 .job h3 {
+  text-align: center;
   margin: 20px 0 0 0;
 }
 
@@ -354,7 +372,7 @@ main.container{
 }
 .related-links{
   grid-area:related;
-  border-bottom:1px solid #999;
+  border-bottom:1px solid;
   padding-bottom:50px
 }
 }
@@ -376,9 +394,207 @@ main.container{
 /*----------------------Edge Case Tweaks-----------------------*/
 
 @media only screen and (max-width: 460px) {
+  .related-links li a svg{display:none;{
+  
+}
+  }
+  
+  @media only screen and (max-width: 395px){
+    .related-links, {
+      flex-direction:column;
+    }
+  
+    .related-links a {
+      display: block;
+  }
+  }  
+  
+  @media only screen and (max-width: 1024px) {
+    main.container{
+      main.container{
+			grid-template-columns: 120px auto 120px;
+        grid-gap: 20px;
+			grid-template-areas:
+      "title  title  title"
+			"about experience skills"
+			"education  education  education";
+			max-width: 600px;
+}
+      
+
+      .visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */ 
+}
+}
+
+#skills{
+    width:auto;
+    padding:1px 10px 0px 10px;
+    color:#fff;
+    border-radius:10px 0px 10px 0px;
+    grid-area:skills;
+    margin:20px;
+}
+#skill li {
+margin-bottom:40px;
+height:20px;
+border-radius:10px;
+-moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+-webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+
+#skill li h3 {
+position:relative;
+top:-35px;
+}
+
+.bar {
+height:18px;
+margin:1px 2px;  
+position:absolute;
+border-radius:10px;
+-moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+-webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+}
+
+.jquery {
+width:30%;
+-moz-animation:jquery 2s ease-out;
+-webkit-animation:jquery 2s ease-out;
+background-color: #294D80;
+}
+
+.photoshop {
+width:65%;
+-moz-animation:photoshop 2s ease-out;
+-webkit-animation:photoshop 2s ease-out;
+background-color: #417BCC;
+}
+
+.illustrator {
+width:80%;
+-moz-animation:photoshop 2s ease-out;
+-webkit-animation:photoshop 2s ease-out;
+background-color: #417BCC;
+}
+
+.html {
+width:80%;
+-moz-animation:html 2s ease-out;
+-webkit-animation:html 2s ease-out;
+background-color: #9EC6FF;
+}
+
+.css {
+width:65%;
+-moz-animation:css 2s ease-out;
+-webkit-animation:css 2s ease-out;
+background-color: #4F6380;
+}
+
+@media only screen and (max-width: 460px) {
   .related-links li a svg{display:none;}
   
 }
+
+@media only screen and (max-width: 395px) {
+.related-links{
+flex-direction:column;
+
+}
+.related-links a{
+display:block;
+  }  
+}
+
+
+#skills{
+    width:auto;
+    background-color:#7B98B2;
+    padding:1px 10px 0px 10px;
+    color:#fff;
+    border-radius:10px 0px 10px 0px;
+    grid-area:skills;
+    margin:20px;
+}
+
+
+#skill {
+list-style: none;
+font: 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+margin: 30px auto 0;
+position: relative;
+line-height: 2em;
+padding: 5px 0;
+    letter-spacing:0px;
+}
+
+#skill li {
+margin-bottom:40px;
+background:#e9e5e2;
+height:20px;
+border-radius:10px;
+-moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+-webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;  
+}
+
+#skill li h3 {
+position:relative;
+top:-35px;
+}
+
+.bar {
+height:18px;
+margin:1px 2px;  
+position:absolute;
+border-radius:10px;
+-moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+-webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+}
+
+.jquery {
+width:20%;
+-moz-animation:html 2s ease-out;
+-webkit-animation:html 2s ease-out;
+background-color: #294D80;
+}
+
+.photoshop {
+width:65%;
+-moz-animation:css 2s ease-out;
+-webkit-animation:css 2s ease-out;
+background-color: #417BCC;
+}
+
+.html {
+width:75%;
+-moz-animation:jquery 2s ease-out;
+-webkit-animation:jquery 2s ease-out;
+background-color: #9EC6FF;
+}
+
+.css {
+width:76%;
+-moz-animation:graphic-design 2s ease-out;
+-webkit-animation:graphic-design 2s ease-out;
+background-color: #4F6380;
+}
+
+    }
+  }
+  
+  
+  
 /* ==========================================================================
    Helper classes
    ========================================================================== */
