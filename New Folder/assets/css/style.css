@@ -1,108 +1,312 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
-html {
-  box-sizing: border-box;
+.Sample_Wireframe {
+  width: 1680px;
+  height: 4747px;
+  background: #000000;
+  .Navigation_C {
+    width: 1680px;
+    height: 60px;
+    background: #ffffff;
+    .Sample_Logo {
+      width: 122px;
+      height: 32px;
+      .photo {
+        color: #000000;
+        font-family: Comfortaa;
+        font-size: 28.444446563720703px;
+        font-weight: normal;
+        text-align: center;
+      }
+      .Union {
+        width: 22px;
+        height: 22px;
+        background: #cccccc;
+        .Rectangle_2 {
+          width: 22px;
+          height: 6px;
+        }
+        .Rectangle_2_1 {
+          width: 22px;
+          height: 6px;
+        }
+      }
+      .Union {
+        width: 22px;
+        height: 22px;
+        background: #000000;
+      }
+    }
+  }
 }
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.Gallery {
+  color: #18a0fb;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: medium;
+  text-align: center;
+  // Text Fill style: Actionable Item;
 }
-
-/*Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/ */
-/* Start of "Micro clearfix" */
-
-.cf {
-  zoom: 1;
+.Pricing {
+  color: #18a0fb;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: medium;
+  text-align: center;
+  // Text Fill style: Actionable Item;
 }
-.cf:before,
-.cf:after {
-  content: "";
-  display: table;
+.Hero_E {
+  width: 1680px;
+  height: 960px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  .Rectangle {
+    width: 1680px;
+    height: 960px;
+  }
+  .The_largest_community_of_photo_enthusiasts {
+    width: 1392px;
+    height: 80px;
+    .The_largest_community_of_photo_enthusiasts {
+      color: #000000;
+      font-family: Montserrat;
+      font-size: 56px;
+      font-weight: normal;
+      text-align: center;
+      line-height: 80px;
+      // Text style: Hero H1;
+    }
+  }
 }
-.cf:after {
-  clear: both;
+.Body_F {
+  width: 1680px;
+  height: 600px;
+  background: #f5f5f5;
+  .Rectangle {
+    width: 750px;
+    height: 440px;
+  }
+  .Sed_ut_perspiciatis_unde_omnis {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    // Text style: Body H4;
+  }
+  .Nemo_enim_ipsam_voluptatem_quia_voluptas_sit_aspernatur_aut_odit_aut_fugit__sed_quia_consequuntur_magni_dolores_eos_qui_ratione_voluptatem_sequi_nesciunt__Neque_porro_quisquam_est__qui_dolorem_ {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    // Text style: Body P;
+  }
 }
-
-/* End of "Micro clearfix" */
-
-/*
-background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.png");*/
-
-.container {
-  max-width: 952px;
-  /*background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.png");*/
-  border: 1px solid #000;
-  margin: 20px auto;
+.Testimonial_D {
+  width: 1680px;
+  height: 738px;
+  background: #ffffff;
+  .Rectangle {
+    width: 280px;
+    height: 123px;
+  }
+  .Rectangle {
+    width: 281px;
+    height: 123px;
+  }
+  .Rectangle {
+    width: 282px;
+    height: 123px;
+  }
 }
-
-header.primary {
-  /* 920px */
-  width: 94.957%;
-  background: #7D07F2;
-  /* 20px */
-  margin: 2.083%;
-  padding: 2.173%;
-  float: left;
+.The_largest_community_of_photo_enthusiasts {
+  width: 1392px;
+  height: 72px;
+  .Gallery {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 72px;
+    // Text style: Sub-page H1;
+  }
 }
-
-#content {
-  /* 544px */
-  width: 54.5168%;
-  background: #AB05F2;
-  margin-left: 2.083%;
-  padding: 2.173%;
-  float: left;
+.Ellipse {
+  width: 136px;
+  height: 136px;
+  .Ellipse {
+    width: 136px;
+    height: 136px;
+  }
 }
-
-aside {
-  /*356px*/
-  width: 37.394%;
-  background: #23D9B7;
-  margin-left: 2.083%;
-  padding: 2.173%;
-  float: left;
+.Signup_C {
+  width: 1680px;
+  height: 340px;
+  background: #f5f5f5;
+  .Lorem_ipsum_dolor_sit_amet__consectetur_adipiscing_elit__sed_do_eiusmod_tempor_incididunt_ut_labore {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 50px;
+    // Text style: Body P Large;
+  }
+  .Button {
+    width: 192px;
+    height: 52px;
+    .Rectangle_2 {
+      width: 192px;
+      height: 52px;
+      background: #ffffff;
+      border: 1px solid #18a0fb;
+      border-radius: 6px;
+      // Stroke style: Actionable Item;
+    }
+    .Contact_us {
+      color: #18a0fb;
+      font-family: Montserrat;
+      font-size: 17px;
+      font-weight: medium;
+      text-align: center;
+      // Text Fill style: Actionable Item;
+    }
+  }
 }
-
-#post{
-  /*356px*/
-  width: 37.394%;
-  background: #23D9B7;
-  margin-left: 2.083%;
-  padding: 2.173%;
-  float: left;
+.Body_E {
+  width: 1680px;
+  height: 600px;
+  background: #ffffff;
+  .Rectangle {
+    width: 750px;
+    height: 440px;
+  }
+  .Sed_ut_perspiciatis_unde_omnis {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    // Text style: Body H4;
+  }
+  .Nemo_enim_ipsam_voluptatem_quia_voluptas_sit_aspernatur_aut_odit_aut_fugit__sed_quia_consequuntur_magni_dolores_eos_qui_ratione_voluptatem_sequi_nesciunt__Neque_porro_quisquam_est__qui_dolorem_ {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    // Text style: Body P;
+  }
 }
-
-
-footer.primary {
-  /* 920px */
-  width: 94.957%;
-  background: #D7F205;
-  /* 20px */
-  margin: 2.083%;
-  padding: 2.173%;
-  float: left;
-}S
-
-.col-4 {
-  width: 365px;
-  background: green;
-  margin-left: 20px;
-  padding: 20px;
-  float: left;
+.Footer_A {
+  width: 1680px;
+  height: 489px;
+  background: #ffffff;
+  .Mobile_app {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .Features_Live_share_Video_record {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+  .__Photo__Inc__2019__We_love_our_users {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+  .Follow_us_ {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: right;
+    line-height: 24px;
+  }
+  .Community {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .Featured_artists_The_Portal_Live_events {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+  .Company {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .About_us_Contact_us_History {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+  .Sample_Logo {
+    width: 122px;
+    height: 32px;
+  }
 }
-
-.col-6 {
-  width: 519px;
-  background: purple;
-  margin-left: 20px;
-  padding: 20px;
-  float: left;
+.Button {
+  width: 130px;
+  height: 40px;
+  .Rectangle_2 {
+    width: 130px;
+    height: 40px;
+    background: #18a0fb;
+    border-radius: 6px;
+    // Fill style: Actionable Item;
+  }
+  .Register {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: medium;
+    text-align: center;
+  }
 }
-
-.col-12 {
-  width: 904px;
-  background: rgba(0, 0, 0, 0.4);
-  margin: 20px;
-  padding: 20px;
-  float: left;
+.Rectangle_2 {
+  width: 130px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #18a0fb;
+  border-radius: 6px;
+  // Stroke style: Actionable Item;
+}
+.Log_in {
+  color: #18a0fb;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: medium;
+  text-align: center;
+  // Text Fill style: Actionable Item;
+}
+.Rectangle {
+  width: 1520px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.Ellipse {
+  width: 44px;
+  height: 44px;
+  .Ellipse {
+    width: 44px;
+    height: 44px;
+  }
 }
