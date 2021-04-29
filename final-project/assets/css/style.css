@@ -87,213 +87,241 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@charset "UTF-8";
-/*!
-* Start Bootstrap - Grayscale v6.0.3 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2020 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
-:root {
-  --blue: #0597F2;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #64a19d;
-  --cyan: #17a2b8;
-  --white: #d9d9d9;
-  --gray: #EBEBEB;
-  --gray-dark: #3b3c40;
-  --primary: #64a19d;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #a4a5a6;
-  --dark: #343a40;
-  --black: #000000;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
 
-*,
-*::before,
-*::after {
+
+html {
   box-sizing: border-box;
 }
-
-html, 
-{margin:0px; 
-padding:30px;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
+/* ------ Typography -------*/
+body {
+ font-family: 'Exo', sans-serif;
 }
 
-body{
-  color: var(--light);
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  background-color: var(--black);
- margin:0px;
- padding:0px;
-  }
-
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-h2, .h2{
-      font-size: 2rem;
-}
-.mt-0, .my-0{
-  margin-top: 0 !important;
-}
-
-.row{
-  text-align: center;
-}
-
-
-.container-home{
-   margin:10px;
-  padding:30px;
-  align: center;
-
-} 
-
-.row, .row featurette{
-  width:90vw;
-  margin:40px auto;
-  max-width:1000px;
-  color: #fff;
-}
-
-.grid-container{
-  text-align:center;
-}
-
-.navbar {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: .5rem 1rem;
-}
-
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+/* ------ Design Time Styles -------*/
+.container{
+    width: 90vw;
+    margin: 40px auto;
+    max-width: 900px;
     
 }
 
-.bg-dark {
-    background-color: var(--blue)!important
-  
-}
-  .navbar-nav{
-  margin:10px;
-  padding:10px;
-  font-size:20px;
-  }
-  
-  .navbar-brand {
-    display: inline-block;
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
-}
-
-.navbar-dark .navbar-brand {
-    color: var(--gray);
-}
-  
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: var(--blue);
-}
 
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-  
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-.carousel-item > img {
+/* ------ Helper Classes -------*/
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
   position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+.headercontainer {
+  margin: 0 auto;
+}
+
+
+.header-img {
+  width: 100%;
+  height: 400px;
+  background: url('http://www.kodhus.com/freecourse-images/header-image.jpg');
+  background-size: cover;
+}
+
+.topnav{
   
 }
 
+topnav {
+  overflow: hidden;
+  background-color: #333;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #B3B3B3;
+	clear: left;
+}
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-.marketing h2 {
-  font-weight: 400;
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
 }
+
+.topnav .icon {
+  display: none;
+}
+hr {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: 0;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+
+
+.text-muted{
+	color: #6c577d !important;
+}
+
+.mb-5, .my-5{
+	margin-bottom: 3rem !important;
+}
+.text-center{
+	text-align: center !important;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+.ul{
+	display: flex;
+	flex-direction: row;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.related-links{
+  display:block;
+  grid-template-rows: auto;
+  grid-template-columns: 8em 1fr;
+  /* Shorthand */
+  grid-template: auto / 8em 1fr;
+}
+	
+.related-links {
+  display: flex;	
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.related-links a {
+  border: 1px solid none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFCE6;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  background: #506AD4;
+  transition: background-color 0.5s ease;
+ 
+}
+
+.related-links .svg-inline--fa {
+  font-size: 1.8em;
+  padding-top: 7px;
+}
+
+.related-links a:hover {
+  background: #F2CC39;
+}
+
+.related-links li {
+  margin-right: 20px;
+}
+	
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+	.col-lg-4{
+		flex: 0 0 41.666666667%;
+		max-width: 41.666666667%;	
+	}
+	.col-lg-8{
+		flex: 0 0 66.6666666667%;
+		max-width: 66.6666666667%;
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+	}
+	
 
 
 /* Featurettes
@@ -310,6 +338,55 @@ body {
   letter-spacing: -.05rem;
 }
 
+/*----------------------Edge Case Tweaks-----------------------*/
+
+@media only screen and (max-width: 460px) {
+  .related-links li a svg{
+	  display:none;
+  
+}
+  }
+  
+  @media only screen and (max-width: 395px) {
+    .related-links {
+      flex-direction: column;
+ }
+    .related-links a {
+      display: block;
+  }
+	
+		
+	
+	
+	/*----------------------Tablet Breakpoint-----------------------*/
+
+@media only screen and (min-width: 768px) {
+
+
+    main.container {
+    max-width:900px;
+    grid-template-columns: 36.5% auto;
+    grid-template-areas:
+      "title title"
+      "about about"
+      "skills experience"
+      ".education";
+  }
+  header.container{
+    max-width:900px;
+  } 
+  
+.related-links{
+  grid-area:related;
+  border-bottom:1px solid;
+  padding-bottom:50px
+}
+}
+
+	
+	
+	
+	
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -332,184 +409,6 @@ body {
     margin-top: 7rem;
   }
 }
-rect[Attributes Style] {
-    width: 100%;
-    height: 100%;
-    fill: rgb(119, 119, 119);
-}
-  
-.carousel {
-    position:relative;
-    
-}
-
-.carousel {
-    margin-bottom: 4rem;
-}
-
-.visit{
- background-color: #D9A282;
- padding: 5%;
- margin: 5%;
-} 
-
-
-.visit-home{
- padding: 10%;
- margin: 5%;
-} 
-
-
-.center{
-  text-align:center;
-  border: none;
-  
-}
-
-
-.container-fluid{
-  text-align:center;
-  border: none;
-}
-
-
-.card{
- background-color: #D9A282;
- border: none;
-}
-
-
-
-.card-body{
-  background-color: #D9A282;
- border: none;
-}
-}
-
-
- .demo-content{
-        padding: 15px;
-        font-size: 18px;
-        overflow:hidden;
- }
-
-
-
- .container{
-  /*background-color: #ccc; */
- border: none;
- padding:0%;
- margin: 5%;
- text-align: center;
-}
-
-
-
-
-.grid-container{
-padding:0%;
- margin: 0%;
- text-align: center;
-}
-
-.container-fluid{
-  padding:0%;
- margin: 0%;
-}
-
-.ml-3 {
-  margin-left: ($spacer * .5) !important;
-  padding-left: ($spacer * .5) !important;
-}
-
-
-.ml-3 {
-margin-right: ($spacer * .5) !important;
-padding-right: ($spacer * .5) !important;
-}
-
-
-.footer{
- background-color: var(--white);
- background-size: 100%;
- /*font-size:20px; */
- margin: 1% 0 0 0;
- padding: 15px 10px 10px 0;
-}
-
-
-
-
-
-
-
-
-media (min-width: 768px)
-.navbar-expand-md {
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-}
-
-
-/* Media Query for Desktop View */
-@media only screen and (max-width: 1024px) {
-}
-
-/* Media Query for Tablet View */
-@media only screen and (min-device-width : 768px){
-}
-
-/* Media Query for Mobile View*/
-@media only screen and (max-width: 480px) {
-
-
-html, 
-{margin:0px; 
-padding:0px;
-}
-
-
-
-
-
-
-
-
-
-  .row {
-    flex-direction: column-reverse;
-  
-  } 
-
-  
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -686,4 +585,3 @@ padding:0px;
     page-break-after: avoid;
   }
 }
-
